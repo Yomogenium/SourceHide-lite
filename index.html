@@ -28,11 +28,11 @@ function ReadSource(target, urls) {
 			scrpt.innerHTML = request.responseText;
 			target.appendChild(scrpt);
 
-			// 処理 
-			HideSource();
-
 			// 消去
 			target.removeChild(scrpt);
+
+			// 処理 
+			HideSource();
 		}
 	}
 	request.send();
